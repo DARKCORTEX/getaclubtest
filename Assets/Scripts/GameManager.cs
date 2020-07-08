@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
             AddedGravity        = 1f,
             Suspension          = .2f
         };
+
+    public ArcadeKart.Stats[] kartsStats;
+    public int selectedKartID;
     // Start is called before the first frame update
     void Start()
     {
