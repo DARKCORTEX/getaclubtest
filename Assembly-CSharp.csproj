@@ -42,6 +42,9 @@
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Kart\Jiggler.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Kart\SimpleTrigger.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Platformer\EmitParticlesOnLand.cs" />
+     <Compile Include="Assets\Scripts\CollectTimeObject.cs" />
+     <Compile Include="Assets\Scripts\LookAtCam.cs" />
+     <Compile Include="Assets\Scripts\RotateObject.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Karting\Art\Fonts\ApacheLicense2.0.txt" />
@@ -245,26 +248,26 @@
     <Reference Include="UnityEditor">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst.Unsafe">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.Protobuf">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/PackageCache/com.unity.barracuda@0.5.0-preview/Barracuda/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Compression.FileSystem">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/PackageCache/com.unity.connect.share@1.2.0-preview.1/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
+    <Reference Include="System.IO.Abstractions">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Assets/Karting/ML_Agents/Plugins/System.IO.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions.TestingHelpers">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Assets/Karting/ML_Agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
     </Reference>
-    <Reference Include="System.IO.Abstractions">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Assets/Karting/ML_Agents/Plugins/System.IO.Abstractions.dll</HintPath>
+    <Reference Include="Grpc.Core">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Assets/Karting/ML_Agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Interactive.Async">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Assets/Karting/ML_Agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
     </Reference>
-    <Reference Include="Grpc.Core">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Assets/Karting/ML_Agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+    <Reference Include="Google.Protobuf">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/PackageCache/com.unity.barracuda@0.5.0-preview/Barracuda/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/PackageCache/com.unity.connect.share@1.2.0-preview.1/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -623,30 +626,6 @@
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
     <Reference Include="Cinemachine">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
@@ -655,6 +634,9 @@
     </Reference>
     <Reference Include="Unity.Burst">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
@@ -680,11 +662,23 @@
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
     <Reference Include="Barracuda">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Barracuda.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
@@ -694,6 +688,9 @@
     </Reference>
     <Reference Include="Unity.InteractiveTutorials.Core.Scripts">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="BurstBLAS">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/BurstBLAS.dll</HintPath>
@@ -715,6 +712,12 @@
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
         <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>D:/DARKCORTEX/Unity/CriticalHitGames/Proyect/GetaClubTest/getaclubtest/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
