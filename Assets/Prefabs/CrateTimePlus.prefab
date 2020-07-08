@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 635321612373364094}
   - component: {fileID: 635321612373364095}
   - component: {fileID: 635321612373364088}
-  - component: {fileID: 635321612373364093}
+  - component: {fileID: 635321610726386837}
   m_Layer: 0
   m_Name: Render
   m_TagString: Untagged
@@ -164,7 +164,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &635321612373364093
+--- !u!114 &635321610726386837
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,13 +173,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 635321612373364091}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93736729bed1f2c4a911e1d64249775f, type: 3}
+  m_Script: {fileID: 11500000, guid: dcb7d58361c3c2f45a6a7ba9cc11a541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
-  RotX: 0
-  RotY: 1
-  RotZ: 0
+  rotationSpeed: {x: 0, y: 0.5, z: 0}
 --- !u!1 &635321612521912223
 GameObject:
   m_ObjectHideFlags: 0
