@@ -31,6 +31,11 @@ public class CollectTimeObject : MonoBehaviour
         text.gameObject.SetActive(true);
         Invoke("DestroyObject",destroyTime);
     }
+    
+    public void EnemyCollect()
+    {
+
+    }
 
     void OnTriggerEnter(Collider col)
     {

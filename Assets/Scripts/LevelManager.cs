@@ -29,17 +29,17 @@ public class LevelManager : MonoBehaviour
 
         if(GameManager.instance.iaLevelSelected == GameManager.iaLevels.facil)
         {
-            enemyKart.baseStats.TopSpeed = 8;
-            enemyKart.baseStats.Acceleration = 2;
+            enemyKart.baseStats.TopSpeed = 10;
+            enemyKart.baseStats.Acceleration = 4;
         }else if(GameManager.instance.iaLevelSelected == GameManager.iaLevels.intermedio)
         {
-            enemyKart.baseStats.TopSpeed = 10;
-            enemyKart.baseStats.Acceleration = 5;
+            enemyKart.baseStats.TopSpeed = 11;
+            enemyKart.baseStats.Acceleration = 6;
         }else if(GameManager.instance.iaLevelSelected == GameManager.iaLevels.dificil)
         {
             
-            enemyKart.baseStats.TopSpeed = 12;
-            enemyKart.baseStats.Acceleration = 8;
+            enemyKart.baseStats.TopSpeed = 13;
+            enemyKart.baseStats.Acceleration = 9;
         }
     }
 

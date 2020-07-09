@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     };
 
     public iaLevels iaLevelSelected;
+    public int enemyPoints;
 
     public ArcadeKart.Stats baseStats = new ArcadeKart.Stats
         {
@@ -50,6 +51,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(enemyPoints >= 3)
+        {
+            enemyPoints = 0;
+            TimeManager.OnSetTime(0,true,GameMode.TimeLimit);
+        }
     }
 }
