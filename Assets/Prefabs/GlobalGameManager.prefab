@@ -43,3 +43,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9920b4769760345ba9505152b85618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iaLevelSelected: 0
+  baseStats:
+    TopSpeed: 10
+    Acceleration: 5
+    ReverseSpeed: 5
+    ReverseAcceleration: 5
+    AccelerationCurve: 4
+    Braking: 10
+    CoastingDrag: 4
+    Grip: 0.95
+    Steer: 5
+    AddedGravity: 1
+    Suspension: 0.2
+  kartsStats:
+  - TopSpeed: 10
+    Acceleration: 5
+    ReverseSpeed: 5
+    ReverseAcceleration: 5
+    AccelerationCurve: 1
+    Braking: 10
+    CoastingDrag: 4
+    Grip: 0.95
+    Steer: 5
+    AddedGravity: 1
+    Suspension: 0.2
+  - TopSpeed: 8
+    Acceleration: 7
+    ReverseSpeed: 5
+    ReverseAcceleration: 5
+    AccelerationCurve: 1
+    Braking: 15
+    CoastingDrag: 4
+    Grip: 0.95
+    Steer: 8
+    AddedGravity: 1
+    Suspension: 0.2
+  - TopSpeed: 5
+    Acceleration: 4
+    ReverseSpeed: 3
+    ReverseAcceleration: 3
+    AccelerationCurve: 1
+    Braking: 7
+    CoastingDrag: 4
+    Grip: 0.95
+    Steer: 4
+    AddedGravity: 1
+    Suspension: 0.2
+  - TopSpeed: 13
+    Acceleration: 10
+    ReverseSpeed: 7
+    ReverseAcceleration: 7
+    AccelerationCurve: 1
+    Braking: 10
+    CoastingDrag: 4
+    Grip: 0.95
+    Steer: 4
+    AddedGravity: 1
+    Suspension: 0.2
+  - TopSpeed: 20
+    Acceleration: 10
+    ReverseSpeed: 10
+    ReverseAcceleration: 10
+    AccelerationCurve: 1
+    Braking: 15
+    CoastingDrag: 4
+    Grip: 0.95
+    Steer: 10
+    AddedGravity: 1
+    Suspension: 0.2
+  selectedKartID: 0
